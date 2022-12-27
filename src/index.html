@@ -46,5 +46,23 @@
         </div>
       </div>
     </div>
+    <script>
+
+      /*document.addEventListener('load', priceFunction);
+      
+      function priceFunction(){
+
+      }*/
+        const allElementsWithPriceClass = document.getElementsByClassName("product");
+
+        for (let index = 0; index < allElementsWithPriceClass.length;) {
+
+          allElementsWithPriceClass[index].setAttribute("data-price",document.getElementsByClassName("price")[index].innerHTML);
+          
+          index++;
+          
+        }
+      
+    </script>
   </body>
 </html>
